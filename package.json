@@ -16,5 +16,14 @@
   "bugs": {
     "url": "https://github.com/Sergey60327/NYTReact/issues"
   },
-  "homepage": "https://github.com/Sergey60327/NYTReact#readme"
+  "homepage": "https://github.com/Sergey60327/NYTReact#readme",
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "morgan": "^1.8.2",
+    "react-dom": "^15.6.1",
+    "webpack": "^3.0.0"
+  }
 }

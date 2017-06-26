@@ -1,6 +1,6 @@
 var axios = require('axios');
 
-// Include React 
+// Include React
 var React = require('react');
 
 // Here we include all of the sub-components
@@ -12,7 +12,7 @@ var Saved = require('./Children/Saved');
 var helpers = require('./utils/helpers.js');
 
 
-// This is the main component. 
+// This is the main component.
 var Main = React.createClass({
 
 	// Here we set a generic state associated with the number of clicks
@@ -24,7 +24,7 @@ var Main = React.createClass({
 			results: [],
 			savedArticles: []
 		}
-	},	
+	},
 
 	// We use this function to allow children to update the parent with searchTerms.
 	setTerm: function(tpc, stYr, endYr){
@@ -99,9 +99,8 @@ var Main = React.createClass({
 				<div className="row">
 
 					<div className="jumbotron" style={{'backgroundImage': 'url(./assets/images/newspaper.jpg)', 'backgroundRepeat': 'no-repeat', 'backgroundPosition': 'center', 'backgroundSize': '100% 100%', 'backgroundAttachment': 'fixed'}}>
-						<h2 className="text-center" style={{'color': 'white', 'textShadow': '3px 3px 10px black', 'fontSize': '54px'}}>New York Times Article Search and Save</h2>
-						<p className="text-center" style={{'color': 'white', 'textShadow': '3px 3px 10px black', 'fontSize': '24px'}}>Search for and save articles of interest!</p>
-					</div>
+						<h2 className="text-center" style={{'color': 'white', 'textShadow': '3px 3px 10px black', 'fontSize': '54px'}}>New York Times Scrubber</h2>
+						</div>
 				</div>
 				<div className="row">
 
@@ -110,13 +109,13 @@ var Main = React.createClass({
 				</div>
 
 				<div className="row">
-			
+
 					<Results results={this.state.results} saveArticle={this.saveArticle}/>
 
 				</div>
 
 				<div className="row">
-				
+
 					<Saved savedArticles={this.state.savedArticles} deleteArticle={this.deleteArticle} />
 
 				</div>

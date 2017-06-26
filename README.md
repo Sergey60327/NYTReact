@@ -1,3 +1,3 @@
 # NYTReact
 
-Heroku: https://nameless-dawn-21608.herokuapp.com
+Heroku: https://peaceful-shore-53953.herokuapp.com
